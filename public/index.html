@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Popular buildings</title>
+	<link rel="stylesheet" href="bundle.css">
+</head>
+
+<body>
+	<header>
+		<h1>Top 50 historische gebouwen van Amsterdam</h1>
+		<p class="intro">Op deze kaart ziet u een overzicht van de vijftig populairste historische gebouwen die Amsterdam te bieden heeft. Dit wordt bepaald door het aantal afbeeldingen van de gebouwen die in het archief staan. Klik op een cirkel om meer informatie over een
+			gebouw te krijgen.
+		</p>
+		<div class="header-controls">
+			<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			<i class="fa fa-chevron-up" aria-hidden="true"></i>
+		</div>
+	</header>
+	<main>
+
+		<section id="detail">
+			<div class="preview">
+				<img class="preview-img" src="/" alt="">
+				<div class="close-button"><svg viewport="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				    <line x1="1" y1="11"
+				          x2="11" y2="1"
+				          stroke="black"
+				          stroke-width="2"/>
+				    <line x1="1" y1="1"
+				          x2="11" y2="11"
+				          stroke="black"
+				          stroke-width="2"/></svg></div>
+			</div>
+
+			<div class="detail-wrapper">
+				<header>
+					<h2 data-bind="name"></h2>
+					<p data-bind="date">Foto's van 1988 t/m 2018</p>
+					<!-- <p class="desc">Station Amsterdam Centraal is het centraal station van de Nederlandse hoofdstad Amsterdam. Het is gebouwd tussen 1881 en 1889 naar ontwerp van P.J.H. Cuypers, A.L. van Gendt (stationsgebouw) en L.J. Eijmer (stationskap). Het station telt zes perrons
+						die via drie dwarsgangen onder de 15 sporen (waarvan 11 perronsporen) bereikbaar zijn. Dagelijks telt Amsterdam Centraal circa 160.000 in- en uitstappers, waarmee het na Station Utrecht Centraal het drukste station van Nederland is.[1] Reizigers
+						kunnen gebruikmaken van treinen, metro's, trams, bussen en veren. Het station is gelegen op het aangeplempte Stationseiland in het IJ.</p> -->
+					<div class="detail-controls">
+						<h5 data-bind="count">Totaal 500 afbeeldingen gevonden</h5>
+						<div class="sort-button">Sorteer op jaar
+							<i class="fa fa-chevron-down sort-fa-chevron-down show" aria-hidden="true"></i>
+							<i class="fa fa-chevron-up sort-fa-chevron-up" aria-hidden="true"></i></div>
+						<input class="search" type="search" name="search" placeholder="Zoeken op datum..">
+					</div>
+				</header>
+
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<div class="grid-item"><img data-bind="img" class="gallery-img" src="/" alt=""></div>
+				</div>
+
+				<a href="#home" class="back-button">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 31.494 31.494"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127H3.813l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0L.321 16.532c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#1e201d"/></svg>
+				Terug naar kaart
+				</a>
+			</div>
+		</section>
+
+		<section id="map"></section>
+	</main>
+	<div class="loader">
+		<div class="sk-circle1 sk-circle"></div>
+		<div class="sk-circle2 sk-circle"></div>
+		<div class="sk-circle3 sk-circle"></div>
+		<div class="sk-circle4 sk-circle"></div>
+		<div class="sk-circle5 sk-circle"></div>
+		<div class="sk-circle6 sk-circle"></div>
+		<div class="sk-circle7 sk-circle"></div>
+		<div class="sk-circle8 sk-circle"></div>
+		<div class="sk-circle9 sk-circle"></div>
+		<div class="sk-circle10 sk-circle"></div>
+		<div class="sk-circle11 sk-circle"></div>
+		<div class="sk-circle12 sk-circle"></div>
+	</div>
+	<div class="error">
+		<h3>Deze pagina kan niet worden geladen.</h3>
+	</div>
+
+	<script type="text/javascript" src="bundle.js">
+	</script>
+</body>
+
+</html>
